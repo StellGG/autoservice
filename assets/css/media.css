@@ -1,0 +1,14 @@
+@media (max-width: 900px) {
+    .image {
+        width: 44.4444%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .image {
+        width: 55.5555%;
+        display: flex;
+        justify-content: center;
+    }
+}

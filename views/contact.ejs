@@ -1,0 +1,12 @@
+<%- include('blocks/header.ejs') %>
+<div class="contact">
+<br><h1>Контакты</h1><br>
+<p>Если у вас возникли какие-либо вопросы или проблемы, пишите их в форме ниже!</p><br><br>
+<form class="contact-form" action="/contact" method="post">
+    <input type="email" placeholder="Введите ваш email" name="emailcontact"><br><br>
+    <input type="text" placeholder="Введите тему" name="themescontact"><br><br>
+    <textarea id="" cols="30" rows="10" placeholder="Сообщение" name="messagecontact"></textarea><br><br>
+    <button type="submit">Отправить</button>
+</form>
+</div>
+<%- include('blocks/footer.ejs') %>

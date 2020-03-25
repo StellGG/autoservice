@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Center | <%- title %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/media.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <ul class="nav-menu" id="scr">
+        <img class="logo__img" src="/logo.jpg">
+            <li>
+            <a href="/"><i class="fas fa-home"></i> Главная</a>
+            <a href="/contact"><i class="fas fa-id-card"></i> Контакты</a>
+            <a href="/aboutus"><i class="far fa-address-card"></i> О нас</a>
+            <a href="/price"><i class="fas fa-tag"></i> Цены</a>
+            <% if(login) { %>
+                <a href="/profile/<%- login %>"><i class="far fa-user"></i> <%- login %> </a>
+                <% } else { %>
+                    <a href="/auth"><i class="far fa-user"></i> Войти</a>
+                    <% } %>
+            </li>
+    </ul>  
